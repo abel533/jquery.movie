@@ -22,6 +22,35 @@ Jquery.movie.js是一个用来顺序执行动画的插件。
 * 默认参数
     $.movie.options - 详细内容参看源码
 
+* demo:
+<script type="text/javascript">
+        $(function(){
+            $('.view1').movie({left:'+=200px'},100,'hehe')
+                .movie({top:'+=100px'},100,'hehe')
+                .movie({left:'-=200px'},100,'hehe')
+                .movie({top:'-=100px'},100,'hehe');
+            $('.view2').movie({top:'-=200px'},100,'hehe')
+                .movie({left:'+=300px'},100,'hehe')
+                .movie({top:'+=200px'},100,'hehe')
+                .movie({left:'-=300px'},100,'hehe');
+            $('#start').click(function(){
+            //执行
+                $.movie('hehe','play');
+            });
+            $('#stop').click(function(){
+                $.movie('hehe','stop');    
+            });
+            $('#replay').click(function(){
+                //需要将对象移动到原来的位置...
+                setInterval(xunhuan,1000);
+            });
+
+            function xunhuan(){
+                $.movie('hehe','restart');    
+            }
+        });
+</script>
+
 ##作者
 email:[abel533@gmail.com]
 blog:[blog.csdn.net/isea533]
