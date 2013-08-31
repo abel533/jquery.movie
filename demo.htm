@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>顺序动画插件</title>
+	<script src="jquery-1.10.2.js"></script>
+	<script src="jquery.inturn.js"></script>
+	<style>
+		#view{position: relative;width:800px;height:400px;background-color: yellow;}
+		.view{position: absolute;width:100px;height:100px;background-color: red;}
+		.view1{top:0}
+		.view2{top:200px;}
+	</style>
+    <script type="text/javascript">
+        $(function(){
+            $('.view1').movie({left:'+=200px'},100,'hehe')
+                .movie({top:'+=100px'},100,'hehe')
+                .movie({left:'-=200px'},100,'hehe')
+                .movie({top:'-=100px'},100,'hehe');
+            $('.view2').movie({top:'-=200px'},100,'hehe')
+                .movie({left:'+=300px'},100,'hehe')
+                .movie({top:'+=200px'},100,'hehe')
+                .movie({left:'-=300px'},100,'hehe');
+            $('#start').click(function(){
+            //执行
+                $.movie('hehe','play');
+            });
+            $('#stop').click(function(){
+                $.movie('hehe','stop');    
+            });
+            $('#replay').click(function(){
+                //需要将对象移动到原来的位置...
+                setInterval(xunhuan,1000);
+            });
+
+            function xunhuan(){
+                $.movie('hehe','restart');    
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="control">
+        <input type="button" id="start" value="start" />
+        <input id="stop" type="button" value="stop" />
+        <input id="replay" type="button" value="replay" />
+    </div>
+	<div id="view">
+		<div class="view view1"></div>
+		<div class="view view2"></div>
+	</div>
+</body>
+</html>
