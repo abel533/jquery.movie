@@ -22,29 +22,29 @@ Jquery.movie.js是一个用来顺序执行动画的插件。
 * 默认参数
     $.movie.options - 详细内容参看源码
 
-* demo:  
- * * *
-     `$(function(){
-            $('.view1').movie({left:'+=200px'},100,'hehe')
-                .movie({top:'+=100px'},100,'hehe')
-                .movie({left:'-=200px'},100,'hehe')
-                .movie({top:'-=100px'},100,'hehe');
-            $('.view2').movie({top:'-=200px'},100,'hehe')
-                .movie({left:'+=300px'},100,'hehe')
-                .movie({top:'+=200px'},100,'hehe')
-                .movie({left:'-=300px'},100,'hehe');
-            $('#start').click(function(){
-            //执行
-                $.movie('hehe','play');
-            });
-            $('#stop').click(function(){
-                $.movie('hehe','stop');    
-            });
-            $('#replay').click(function(){
-                $.movie('hehe','restart'); 
-            });
-        });`
- * * *
+* demo:   
+ * * *  
+     `$(function(){    
+            $('.view1').movie({left:'+=200px'},100,'hehe')  
+                .movie({top:'+=100px'},100,'hehe')  
+                .movie({left:'-=200px'},100,'hehe')  
+                .movie({top:'-=100px'},100,'hehe');  
+            $('.view2').movie({top:'-=200px'},100,'hehe')  
+                .movie({left:'+=300px'},100,'hehe')  
+                .movie({top:'+=200px'},100,'hehe')  
+                .movie({left:'-=300px'},100,'hehe');  
+            $('#start').click(function(){  
+            //执行  
+                $.movie('hehe','play');  
+            });  
+            $('#stop').click(function(){  
+                $.movie('hehe','stop');      
+            });  
+            $('#replay').click(function(){  
+                $.movie('hehe','restart');   
+            });  
+        });`   
+ * * *   
 ##作者
 * email:abel533@gmail.com
 * blog:blog.csdn.net/isea533
