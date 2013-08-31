@@ -49,6 +49,6 @@ Jquery.movie.js是一个用来顺序执行动画的插件。
 * email:abel533@gmail.com
 * blog:http://blog.csdn.net/isea533
 
-* 汉诺塔动画演示：http://tut.ap01.asw.af.cm/visual/hanoi.htm
+* 汉诺塔动画演示：http://tut.ap01.aws.af.cm/visual/hanoi.htm
 ##其他
 该插件正在开发中，许多内容还不完善，如果有更好的想法或者意见可以跟我联系。
