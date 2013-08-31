@@ -24,7 +24,7 @@ Jquery.movie.js是一个用来顺序执行动画的插件。
 
 * demo:  
  * * *
-     $(function(){
+     `$(function(){
             $('.view1').movie({left:'+=200px'},100,'hehe')
                 .movie({top:'+=100px'},100,'hehe')
                 .movie({left:'-=200px'},100,'hehe')
@@ -43,7 +43,7 @@ Jquery.movie.js是一个用来顺序执行动画的插件。
             $('#replay').click(function(){
                 $.movie('hehe','restart'); 
             });
-        });
+        });`
  * * *
 ##作者
 * email:abel533@gmail.com
