@@ -23,7 +23,6 @@ Jquery.movie.js是一个用来顺序执行动画的插件。
     $.movie.options - 详细内容参看源码
 
 * demo:
-    <script type="text/javascript">
         $(function(){
             $('.view1').movie({left:'+=200px'},100,'hehe')
                 .movie({top:'+=100px'},100,'hehe')
@@ -49,7 +48,6 @@ Jquery.movie.js是一个用来顺序执行动画的插件。
                 $.movie('hehe','restart');    
             }
         });
-    </script>`
 
 ##作者
 email:[abel533@gmail.com]
