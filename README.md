@@ -1,5 +1,5 @@
 # Jquery.movie.js
-* * *
+
 Jquery.movie.js是一个用来顺序执行动画的插件。
 
 ##使用方法:
@@ -23,6 +23,7 @@ Jquery.movie.js是一个用来顺序执行动画的插件。
     $.movie.options - 详细内容参看源码
 
 * demo:
+ * * *
         `$(function(){
             $('.view1').movie({left:'+=200px'},100,'hehe')
                 .movie({top:'+=100px'},100,'hehe')
@@ -40,15 +41,10 @@ Jquery.movie.js是一个用来顺序执行动画的插件。
                 $.movie('hehe','stop');    
             });
             $('#replay').click(function(){
-                //需要将对象移动到原来的位置...
-                setInterval(xunhuan,1000);
+                $.movie('hehe','restart'); 
             });
-
-            function xunhuan(){
-                $.movie('hehe','restart');    
-            }
         });`
-
+ * * *
 ##作者
 * email:abel533@gmail.com
 * blog:blog.csdn.net/isea533
